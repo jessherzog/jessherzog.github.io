@@ -2,8 +2,8 @@ var NW;
 var SE;
 
 function preload() {
-  NW = loadImage("assets/dude.gif");
-  SE = loadImage("assets/fleur.gif");
+  NW = loadImage("dude.gif");
+  SE = loadImage("fleur.gif");
 }
 
 function setup() {
