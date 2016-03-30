@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>01-flesch</title>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+    <script src="sketch.js" type="text/javascript"></script>
+
+    <style> 
+      
+      body {
+        padding: 0px 20px; 
+        margin: 0;
+        font-family: Arial;
+        color: white;
+        mix-blend-mode: hard-light;
+        text-shadow: .5px .5px #ffff00;
+        background-color: lavender;
+      } 
+      canvas {
+        vertical-align: top;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>How productive have you <em>really</em> been?</h1>
+    <h5>(based on searches for the words <em>facebook, twitter</em> and <em>tumblr</em> in your recent browser history)</h5>
+    <p> ⌘T → ⌘Y → ⌘A → ⌘C </p>
+      <textarea id="textinput" rows="10" cols="80">⌘V here ↓ </textarea><br>
+      <button id="submit">Submit</button>
+    </p>
+  </body>
+</html>
