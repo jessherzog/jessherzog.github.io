@@ -27,7 +27,7 @@ function processTxt(data) {
 function findVowels(txt){
 	var eggex = /([aeiou])/gi;
 
-	var findAtVowels = theTxt.replace(eggex, "egg");
+	var findAtVowels = theTxt.replace(eggex, "egg" + '$1');
 
 	var newString = "";
 	for(var i=0; i<findAtVowels.length; i++){
