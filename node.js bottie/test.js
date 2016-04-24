@@ -8,7 +8,7 @@ var T = new Twit({
 	timeout_ms:60*1000,
 })
 
-T.post('statuses/update', {status: "tweeting with node.js wow"},
+T.post('statuses/update', {status: "¯|_(ツ)_/¯ ¯|_(ツ)_/¯ ¯|_(ツ)_/¯ ¯|_(ツ)_/¯"},
 
 function (err, data, response){
 	console.log(err);
