@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<head>
+		<title> source control </title>
+
+		<!-- CSS -->
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+
+		<!-- JS -->
+
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js'></script>
+	    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script type="text/javascript" src="js/libs/dat.gui.min.js"></script>
+		<script type="text/javascript" src="js/libs/animationFrame.js"></script>
+		<script type="text/javascript" src="js/texter.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+
+
+	</head>
+
+		<style>
+			#c {
+				background:#ccc;
+				overflow:hidden;
+				border-style:groove;
+				position:absolute;
+			}
+			#words{
+			}
+			* { margin: 0; padding: 0;}
+			body, html { height:100%; }
+
+		</style>
+
+	<body>
+		<!-- 
+		OG RCStream code from: 
+		https://github.com/Krinkle
+		.
+		Documentation:
+		https://wikitech.wikimedia.org/wiki/RCStream 
+		-->
+
+		<div class="container">
+		    <div id="feed" class="mw-feed"></div>
+	    </div>
+
+    	<button id="undo">Undo</button>
+		<button id="redo">Redo</button>
+		<br>
+
+		<!-- APP -->
+
+		<canvas id="c"></canvas>
+		<div id="words"></div>
+
+		<script>
+
+			var texter = new Texter();
+			texter.initialize();
+
+			var gui = new dat.GUI();
+			gui.add(texter, 'text').name( 'Text' );
+			gui.add(texter, 'minFontSize', 3, 100).name( 'Minimum Size' );
+			gui.add(texter, 'maxFontSize', 3, 400).name( 'Maximum Size' );
+			gui.add(texter, 'angleDistortion', 0, 2).step(0.1).name( 'Random Angle' );
+			gui.addColor(texter, 'textColor').name( 'Text Color' ).onChange( function(value) { texter.applyNewColor( value ) } );
+			gui.addColor(texter, 'bgColor').name( 'Background Color' ).onChange( function(value) { texter.setBackground( value ) } );
+			gui.add(texter, 'clear').name( 'Clear' );
+			gui.add(texter, 'save').name( 'Save' );
+
+		</script>
+
+		<script src="source_control.js"></script>
+
+	</body>
+
+</html>
