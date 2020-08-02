@@ -1,0 +1,197 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>poem >> dada</title>
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <!-- uncomment lines below to include extra p5 libraries -->
+  <!--<script language="javascript" src="libraries/p5.dom.js"></script>-->
+  <!--<script language="javascript" src="libraries/p5.sound.js"></script>-->
+  <!--<script language="javascript" type="text/javascript" src="sketch.js"></script>-->
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <style> 
+  body {padding: 0; margin: 10%; margin-top: 2%; font-size: 10px;} 
+  div {width: 50%; clear: none;}
+  #left{float: left;}
+  #right{float: right;}
+  </style>
+</head>
+
+<body>
+
+	<img src="http://i125.photobucket.com/albums/p70/sealace/NielsonArabianNights/TheDervishArrangedforThemtoBeTogeth.jpg" border="0" width="40%" float="left" clear="both"/>
+<div id = "left">
+	<h3>scheherazade <em>[ original text ]</em></h3>
+	<p>
+	tell me about the dream where we pull the bodies out of the lake
+	<br>and dress them in warm clothes again.
+	<br>how it was late, and no one could sleep, the horses running
+	<br>until they forget that they are horses.
+	<br>it’s not like a tree where the roots have to end somewhere,
+	<br>it’s more like a song on a policeman’s radio,
+	<br>how we rolled up the carpet so we could dance, and the days
+	<br>were bright red, and every time we kissed there was another apple to slice into pieces.
+	<br>look at the light through the windowpane. that means it’s noon, that means
+	<br>we’re inconsolable.
+	<br>tell me how all this, and love too, will ruin us.
+	<br>these, our bodies, possessed by light.
+	<br>tell me we’ll never get used to it.
+	<br><br>Richard Siken (2005)
+	</p>
+</div>
+<script>
+	var para = "Tell me about the dream where we pull the bodies out of the lake and dress them in warm clothes again How it was late and no one could sleep the horses running until they forget that they are horses It's not like a tree where the roots have to end somewhere it’s more like a song on a policeman’s radio how we rolled up the carpet so we could dance and the days were bright red and every time we kissed there was another apple to slice into pieces Look at the light through the windowpane That means it’s noon that means we’re inconsolable Tell me how all this and love too will ruin us These our bodies possessed by light Tell me we’ll never get used to it";
+	var eachP = para.split(" "); 
+
+	var noun = "scheherazade me dream we bodies lake them clothes how it no-one horses they they horses it tree roots somewhere it song radio how we carpet we days every-time we there apple pieces light windowpane that it noon that we me this love us these bodies how light me we it";
+	var eachN = noun.split(" "); 
+
+	var verb = "tell pull dress was could-sleep running forget are end rolled-up could dance were kissed was slice look-at means means tell will ruin possessed tell get-used-to";
+	var eachV = verb.split(" "); 
+
+	var adj = "about out-of warm again late until not like-a-tree somewhere more like-a-song policeman’s bright red every another through inconsolable all never";
+	var eachA = adj.split(" "); 
+
+	var N = function (){
+		var randN = eachN[Math.floor(Math.random() * eachN.length)];
+		document.write(randN);
+	};
+
+	var V = function (){
+		var randV = eachV[Math.floor(Math.random() * eachV.length)];
+		document.write(randV);
+	};
+
+	var A = function (){
+		var randA = eachA[Math.floor(Math.random() * eachA.length)];
+		document.write(randA);
+	};
+
+	var space = function (){
+	 	document.createTextNode("\u00A0");
+	};
+
+	var em = 
+
+</script>
+
+<div id = "right">
+	<h3>
+		<script>N();</script> 
+		<em>[ dada text ]</em>
+	</h3>
+	<p>
+		<script>V(); space; N(); space; A();</script> 
+		the 
+		<script>N();</script> 
+		where
+		<script>N(); space; V();</script>
+		the
+		<script>N(); space; A(); </script>
+		the 
+		<script>N();</script>
+	
+		<br>
+		
+		and <script> V(); space; N(); </script>
+		in 
+		<script>A(); space; N(); space; A();</script>. 
+		
+		<br>
+
+		<script>N(); space; N(); space; V(); space; A();</script>, 
+		and 
+		<script>N(); space; V();</script>, 
+		the 
+		<script>N(); space; V();</script>
+		
+		<br>
+
+		<script>A(); space; N(); space; V();</script> 
+		that 
+		<script>N(); space; V(); space; N();</script>.
+		
+		<br>
+
+		<script>N();</script>’s 
+		not 
+		<script>A();</script> 
+		where the 
+		<script>N(); space; V(); space; N();</script>, 
+		
+		<br>
+
+		<script>N();</script>’s 
+		more
+		<script>A();</script> 
+		on a <script>A(); space; N();</script>, 
+		
+		<br>
+
+		how
+		<script> N(); space; V(); </script>
+		the 
+		<script>N(); </script>
+		so
+		<script>N(); space; V(); space; V();</script>, 
+		and the 
+		<script>N();</script>
+		
+		<br>
+
+		<script>V(); space; A(); space; A();</script>, 
+		and 
+		<script>N(); space; N(); space; V(); space; N(); space; V(); space; A(); space; N(); </script>
+		to 
+		<script>V(); </script>
+		into 
+		<script>N();</script>. 
+		
+		<br>
+
+		<script>V(); </script>
+		the
+		<script>N(); space; A(); </script>
+		the 
+		<script>N();</script>. 
+		<script>N(); space; V(); space; N();</script>’s 
+		<script>N();</script>, 
+		<script>N(); space; V();</script>
+		
+		<br>
+
+		<script>N();</script>’re 
+		<script>A();</script>.
+		
+		<br>
+
+		<script>V(); space; N();</script> 
+		how 
+		<script>A(); space; N();</script>, 
+		and 
+		<script>N();</script> 
+		too,
+		<script>V(); space; N();</script>.
+		
+		<br>
+
+		<script>N();</script>, 
+		our 
+		<script>N();</script>, 
+		<script>V();</script>
+		by
+		<script>N();</script>. 
+		
+		<br>
+		
+		<script>V(); space; N(); space; N();</script>’ll 
+		<script>A(); space; V(); space; N();</script>. 
+		
+		<br>
+
+		<br>
+
+		JS (2016)
+	</p>
+</div>
+</body>
+</html>
